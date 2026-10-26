@@ -4,7 +4,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 
 ## Milestone 1 (M1) — Foundation & Data Layer
 - [x] **Task 1.1:** Buat helper `Utilities/CurrencyFormatter.swift` (format Rupiah `Rp X.XXX` dan helper tanggal Bahasa Indonesia) serta `Utilities/KeychainHelper.swift`.
-- [ ] **Task 1.2:** Buat kelima model SwiftData di `Models/`: `Account.swift`, `Category.swift`, `Transaction.swift`, `Budget.swift`, dan `SavingsGoal.swift` beserta model `User.swift`.
+- [x] **Task 1.2:** Buat kelima model SwiftData di `Models/`: `Account.swift`, `Category.swift`, `Transaction.swift`, `Budget.swift`, dan `SavingsGoal.swift` beserta model `User.swift`.
 - [ ] **Task 1.3:** Buat `Services/DatabaseSeeder.swift` untuk mengisi Kategori Tetap (`Makanan & Minuman`, `Transportasi`, `Belanja`, `Tagihan`, `Gaji`, dll.) dan Akun awal saat aplikasi pertama kali dijalankan.
 - [ ] **Task 1.4:** Buat kerangka navigasi utama `Views/Layout/MainTabView.swift` (Tab Dashboard, Transaksi, Anggaran, Tabungan, Laporan/Akun) dan konfigurasikan `.modelContainer` di `KeySakuApp.swift`.
 
