@@ -3,6 +3,8 @@ import SwiftData
 
 @main
 struct KeySakuApp: App {
+    @State private var authService = AuthService.shared
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Account.self,
@@ -22,7 +24,14 @@ struct KeySakuApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            Group {
+                if authService.isAuthenticated {
+                    MainTabView()
+                } else {
+                    LoginView()
+                }
+            }
+            .animation(.easeInOut, value: authService.isAuthenticated)
         }
         .modelContainer(sharedModelContainer)
     }
