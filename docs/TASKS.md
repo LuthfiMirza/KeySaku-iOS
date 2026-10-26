@@ -28,7 +28,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 ## Milestone 5 (M5) — Voice Input Pintar & Laporan Visual (Swift Charts)
 - [x] **Task 5.1:** Buat `Services/VoiceParserService.swift` menggunakan `SFSpeechRecognizer(locale: Locale(identifier: "id-ID"))` dan parser angka Bahasa Indonesia (*"Beli makan siang dua puluh ribu"* ➔ `Rp 20.000`, kategori otomatis).
 - [x] **Task 5.2:** Buat `Views/Transactions/VoiceTransactionSheet.swift` dengan animasi gelombang mikrofon, hasil transkripsi live, dan tombol simpan instan.
-- [ ] **Task 5.3:** Buat `Views/Reports/ReportsChartView.swift` menggunakan framework `Charts` bawaan Apple:
+- [x] **Task 5.3:** Buat `Views/Reports/ReportsChartView.swift` menggunakan framework `Charts` bawaan Apple:
   - Grafik Batang (`BarMark`) pemasukan vs pengeluaran 6 bulan terakhir.
   - Grafik Donat (`SectorMark`) pengeluaran per kategori bulan ini.
 - [ ] **Task 5.4:** Lengkapi `Views/Dashboard/DashboardView.swift` dengan kartu ringkasan saldo, ringkasan anggaran keseluruhan, tombol cepat Input Suara, dan kartu Insight otomatis.

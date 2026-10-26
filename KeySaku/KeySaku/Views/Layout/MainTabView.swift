@@ -41,9 +41,7 @@ public struct MainTabView: View {
             .tag(3)
             
             // Tab 5: Laporan & Akun
-            NavigationStack {
-                ReportPlaceholderView()
-            }
+            ReportsChartView()
             .tabItem {
                 Label("Laporan", systemImage: "chart.bar.xaxis")
             }
