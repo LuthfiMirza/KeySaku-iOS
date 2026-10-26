@@ -26,7 +26,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 - [x] **Task 4.3:** Buat `Views/Goals/ManageGoalsView.swift`, `GoalFormSheet.swift`, dan `AddContributionSheet.swift` (menambah nominal `currentAmount` pada progress bar tabungan tanpa memotong saldo akun).
 
 ## Milestone 5 (M5) — Voice Input Pintar & Laporan Visual (Swift Charts)
-- [ ] **Task 5.1:** Buat `Services/VoiceParserService.swift` menggunakan `SFSpeechRecognizer(locale: Locale(identifier: "id-ID"))` dan parser angka Bahasa Indonesia (*"Beli makan siang dua puluh ribu"* ➔ `Rp 20.000`, kategori otomatis).
+- [x] **Task 5.1:** Buat `Services/VoiceParserService.swift` menggunakan `SFSpeechRecognizer(locale: Locale(identifier: "id-ID"))` dan parser angka Bahasa Indonesia (*"Beli makan siang dua puluh ribu"* ➔ `Rp 20.000`, kategori otomatis).
 - [ ] **Task 5.2:** Buat `Views/Transactions/VoiceTransactionSheet.swift` dengan animasi gelombang mikrofon, hasil transkripsi live, dan tombol simpan instan.
 - [ ] **Task 5.3:** Buat `Views/Reports/ReportsChartView.swift` menggunakan framework `Charts` bawaan Apple:
   - Grafik Batang (`BarMark`) pemasukan vs pengeluaran 6 bulan terakhir.
