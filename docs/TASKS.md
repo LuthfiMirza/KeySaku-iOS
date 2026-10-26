@@ -9,7 +9,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 - [x] **Task 1.4:** Buat kerangka navigasi utama `Views/Layout/MainTabView.swift` (Tab Dashboard, Transaksi, Anggaran, Tabungan, Laporan/Akun) dan konfigurasikan `.modelContainer` di `KeySakuApp.swift`.
 
 ## Milestone 2 (M2) — Auth (Laravel API) & Manajemen Akun
-- [ ] **Task 2.1:** Buat `Services/APIConfig.swift` dan `Services/AuthService.swift` (Login, Register, Logout via `URLSession` ke backend Laravel + Mode Offline Bypass agar tetap bisa dipakai tanpa server).
+- [x] **Task 2.1:** Buat `Services/APIConfig.swift` dan `Services/AuthService.swift` (Login, Register, Logout via `URLSession` ke backend Laravel + Mode Offline Bypass agar tetap bisa dipakai tanpa server).
 - [ ] **Task 2.2:** Buat tampilan `Views/Auth/LoginView.swift` dan `Views/Auth/RegisterView.swift` dengan desain modern khas iOS.
 - [ ] **Task 2.3:** Buat `Views/Accounts/ManageAccountsView.swift` dan `AccountFormSheet.swift` untuk CRUD akun keuangan (`Kas`, `Bank`, `E-Wallet`) beserta perhitungan total saldo otomatis.
 
