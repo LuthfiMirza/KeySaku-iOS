@@ -15,6 +15,7 @@ public struct TransactionListView: View {
     @State private var transactionToEdit: Transaction? = nil
     @State private var transactionToDelete: Transaction? = nil
     @State private var showingDeleteAlert: Bool = false
+    @State private var showingVoiceSheet: Bool = false
     
     public init() {}
     
@@ -141,14 +142,27 @@ public struct TransactionListView: View {
             .searchable(text: $searchText, prompt: "Cari judul, kategori, atau catatan...")
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
-                    Button {
-                        showingCreateSheet = true
-                    } label: {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.title3)
-                            .foregroundStyle(Color(hex: "#10B981"))
+                    HStack(spacing: 12) {
+                        Button {
+                            showingVoiceSheet = true
+                        } label: {
+                            Image(systemName: "mic.circle.fill")
+                                .font(.title3)
+                                .foregroundStyle(Color(hex: "#10B981"))
+                        }
+                        
+                        Button {
+                            showingCreateSheet = true
+                        } label: {
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title3)
+                                .foregroundStyle(Color(hex: "#10B981"))
+                        }
                     }
                 }
+            }
+            .sheet(isPresented: $showingVoiceSheet) {
+                VoiceTransactionSheet()
             }
             .sheet(isPresented: $showingCreateSheet) {
                 CreateEditTransactionSheet()
