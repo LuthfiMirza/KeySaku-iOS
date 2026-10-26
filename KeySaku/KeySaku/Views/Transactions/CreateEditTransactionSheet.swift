@@ -10,6 +10,7 @@ public struct CreateEditTransactionSheet: View {
     @Query(sort: \Category.name) private var categories: [Category]
     
     var transactionToEdit: Transaction?
+    var defaultAccount: Account?
     
     @State private var type: String = "expense" // "expense" atau "income"
     @State private var title: String = ""
@@ -19,8 +20,9 @@ public struct CreateEditTransactionSheet: View {
     @State private var date: Date = Date()
     @State private var note: String = ""
     
-    public init(transactionToEdit: Transaction? = nil) {
+    public init(transactionToEdit: Transaction? = nil, defaultAccount: Account? = nil) {
         self.transactionToEdit = transactionToEdit
+        self.defaultAccount = defaultAccount
     }
     
     private var isEditing: Bool {
@@ -168,7 +170,7 @@ public struct CreateEditTransactionSheet: View {
         } else {
             // Set default account jika belum terpilih
             if selectedAccount == nil {
-                selectedAccount = accounts.first
+                selectedAccount = defaultAccount ?? accounts.first
             }
             // Set default category
             if selectedCategoryName.isEmpty {
