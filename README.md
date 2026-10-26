@@ -155,12 +155,12 @@ Aplikasi ini terhubung langsung dengan backend **Laravel 12 (REST API)** yang di
 ## 🗺 Roadmap
 | Milestone | Status | Keterangan |
 |---|---|---|
-| **M1 — Foundation** | ⏳ Planned | Xcode scaffold, SwiftData container, layout MainTabView, CurrencyFormatter, Seed kategori tetap |
-| **M2 — Auth & Akun** | ⏳ Planned | Login/Register (Laravel Sanctum API + Keychain), manajemen akun keuangan (Kas, Bank, E-Wallet) |
-| **M3 — Transaksi & Kategori** | ⏳ Planned | CRUD transaksi, auto-update saldo (TransactionObserver), kategori tetap + kustom, filter bulan & kategori |
-| **M4 — Anggaran & Tabungan** | ⏳ Planned | Anggaran bulanan (Aman/Mendekati/Lewat), salin bulan lalu 1-klik, target tabungan + progress bar |
-| **M5 — Voice & Insight** | ⏳ Planned | Input suara Bahasa Indonesia (SFSpeechRecognizer), laporan Swift Charts (Bar 6 bulan & Donat), insight otomatis |
-| **M6 — Sync Polish & Deploy** | ⏳ Planned | Sinkronisasi penuh SwiftData <-> MySQL Hostinger, Haptic feedback, build ke iPhone pribadi |
+| **M1 — Foundation** | ✅ Completed | Xcode scaffold, SwiftData container, layout MainTabView, CurrencyFormatter, Seed kategori tetap |
+| **M2 — Auth & Akun** | ✅ Completed | Login/Register (Laravel Sanctum API + Keychain), manajemen akun keuangan (Kas, Bank, E-Wallet) |
+| **M3 — Transaksi & Kategori** | ✅ Completed | CRUD transaksi, auto-update saldo (TransactionObserver), kategori tetap + kustom, filter bulan & kategori |
+| **M4 — Anggaran & Tabungan** | ✅ Completed | Anggaran bulanan (Aman/Mendekati/Lewat), salin bulan lalu 1-klik, target tabungan + progress bar |
+| **M5 — Voice & Insight** | ✅ Completed | Input suara Bahasa Indonesia (SFSpeechRecognizer), laporan Swift Charts (Bar 6 bulan & Donat), insight otomatis |
+| **M6 — Sync Polish & Deploy** | ✅ Completed | Sinkronisasi dua arah SwiftData <-> Laravel API, Cadangan JSON lokal, Haptic feedback, panduan Laravel 12 |
 
 ---
 

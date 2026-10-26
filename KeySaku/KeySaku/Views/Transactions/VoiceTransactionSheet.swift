@@ -371,6 +371,7 @@ public struct VoiceTransactionSheet: View {
             in: modelContext
         )
         
+        HapticHelper.success()
         dismiss()
     }
 }

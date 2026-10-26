@@ -29,6 +29,7 @@ public struct ReportsChartView: View {
     
     @State private var selectedDate: Date = Date()
     @State private var chartMode: ChartMode = .expense
+    @State private var showingBackupSheet: Bool = false
     
     public enum ChartMode: String, CaseIterable, Identifiable {
         case expense = "Pengeluaran"
@@ -159,6 +160,9 @@ public struct ReportsChartView: View {
             }
             .navigationTitle("Laporan Keuangan")
             .navigationBarTitleDisplayMode(.inline)
+            .sheet(isPresented: $showingBackupSheet) {
+                BackupView()
+            }
         }
     }
     
@@ -447,6 +451,22 @@ public struct ReportsChartView: View {
             } label: {
                 HStack {
                     Label("Kelola Kategori Transaksi", systemImage: "tag.fill")
+                        .foregroundStyle(.primary)
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .padding()
+                .background(Color(.secondarySystemBackground))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+            
+            Button {
+                showingBackupSheet = true
+            } label: {
+                HStack {
+                    Label("Cadangan Data & Sinkronisasi", systemImage: "externaldrive.fill.badge.icloud")
                         .foregroundStyle(.primary)
                     Spacer()
                     Image(systemName: "chevron.right")

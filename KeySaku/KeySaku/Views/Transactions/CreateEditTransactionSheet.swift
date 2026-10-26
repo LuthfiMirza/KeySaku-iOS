@@ -205,6 +205,7 @@ public struct CreateEditTransactionSheet: View {
             )
         }
         
+        HapticHelper.success()
         dismiss()
     }
 }

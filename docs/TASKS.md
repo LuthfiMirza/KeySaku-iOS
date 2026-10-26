@@ -35,4 +35,4 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 
 ## Milestone 6 (M6) — Cloud Sync Laravel & Polish
 - [x] **Task 6.1:** Buat `Services/SyncService.swift` untuk sinkronisasi dua arah antara `SwiftData` lokal di iPhone dan endpoint REST API `/api/v1/sync` di server Laravel Hostinger.
-- [ ] **Task 6.2:** Tambahkan *Haptic Feedback* pada aksi penting, fitur Export/Backup JSON lokal, serta panduan penambahan route `routes/api.php` untuk sisi server Laravel 12.
+- [x] **Task 6.2:** Tambahkan *Haptic Feedback* pada aksi penting, fitur Export/Backup JSON lokal, serta panduan penambahan route `routes/api.php` untuk sisi server Laravel 12.
