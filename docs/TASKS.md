@@ -14,7 +14,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 - [x] **Task 2.3:** Buat `Views/Accounts/ManageAccountsView.swift` dan `AccountFormSheet.swift` untuk CRUD akun keuangan (`Kas`, `Bank`, `E-Wallet`) beserta perhitungan total saldo otomatis.
 
 ## Milestone 3 (M3) — Transaksi, Auto-Update Saldo & Kategori Kustom
-- [ ] **Task 3.1:** Buat `Services/TransactionObserver.swift` yang menangani `createTransaction`, `updateTransaction`, dan `deleteTransaction` secara atomik (otomatis memperbarui `account.balance`).
+- [x] **Task 3.1:** Buat `Services/TransactionObserver.swift` yang menangani `createTransaction`, `updateTransaction`, dan `deleteTransaction` secara atomik (otomatis memperbarui `account.balance`).
 - [ ] **Task 3.2:** Buat `Views/Categories/ManageCategoriesView.swift` untuk melihat kategori tetap dan menambah/mengedit kategori baru.
 - [ ] **Task 3.3:** Buat `Views/Transactions/TransactionListView.swift` lengkap dengan filter Bulan/Tahun, filter Kategori, pencarian, dan *swipe-to-delete* dengan konfirmasi.
 - [ ] **Task 3.4:** Buat `Views/Transactions/CreateEditTransactionSheet.swift` untuk form tambah & edit pemasukan/pengeluaran.
