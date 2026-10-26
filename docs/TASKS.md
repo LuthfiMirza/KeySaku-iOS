@@ -23,7 +23,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 - [x] **Task 4.1:** Buat `Views/Budgets/ManageBudgetsView.swift` dan `BudgetFormSheet.swift` dengan perhitungan persentase real-time dan indikator status:
   - Hijau (`Aman` < 80%), Oranye (`Mendekati Batas` 80–99%), Merah (`Lewat Batas` >= 100%).
 - [x] **Task 4.2:** Implementasikan fitur **Salin Anggaran Bulan Lalu** dengan 1 klik di `ManageBudgetsView.swift`.
-- [ ] **Task 4.3:** Buat `Views/Goals/ManageGoalsView.swift`, `GoalFormSheet.swift`, dan `AddContributionSheet.swift` (menambah nominal `currentAmount` pada progress bar tabungan tanpa memotong saldo akun).
+- [x] **Task 4.3:** Buat `Views/Goals/ManageGoalsView.swift`, `GoalFormSheet.swift`, dan `AddContributionSheet.swift` (menambah nominal `currentAmount` pada progress bar tabungan tanpa memotong saldo akun).
 
 ## Milestone 5 (M5) — Voice Input Pintar & Laporan Visual (Swift Charts)
 - [ ] **Task 5.1:** Buat `Services/VoiceParserService.swift` menggunakan `SFSpeechRecognizer(locale: Locale(identifier: "id-ID"))` dan parser angka Bahasa Indonesia (*"Beli makan siang dua puluh ribu"* ➔ `Rp 20.000`, kategori otomatis).

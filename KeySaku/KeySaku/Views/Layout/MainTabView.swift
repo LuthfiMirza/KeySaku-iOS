@@ -34,9 +34,7 @@ public struct MainTabView: View {
             .tag(2)
             
             // Tab 4: Tabungan
-            NavigationStack {
-                GoalPlaceholderView()
-            }
+            ManageGoalsView()
             .tabItem {
                 Label("Tabungan", systemImage: "target")
             }
