@@ -11,7 +11,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 ## Milestone 2 (M2) — Auth (Laravel API) & Manajemen Akun
 - [x] **Task 2.1:** Buat `Services/APIConfig.swift` dan `Services/AuthService.swift` (Login, Register, Logout via `URLSession` ke backend Laravel + Mode Offline Bypass agar tetap bisa dipakai tanpa server).
 - [x] **Task 2.2:** Buat tampilan `Views/Auth/LoginView.swift` dan `Views/Auth/RegisterView.swift` dengan desain modern khas iOS.
-- [ ] **Task 2.3:** Buat `Views/Accounts/ManageAccountsView.swift` dan `AccountFormSheet.swift` untuk CRUD akun keuangan (`Kas`, `Bank`, `E-Wallet`) beserta perhitungan total saldo otomatis.
+- [x] **Task 2.3:** Buat `Views/Accounts/ManageAccountsView.swift` dan `AccountFormSheet.swift` untuk CRUD akun keuangan (`Kas`, `Bank`, `E-Wallet`) beserta perhitungan total saldo otomatis.
 
 ## Milestone 3 (M3) — Transaksi, Auto-Update Saldo & Kategori Kustom
 - [ ] **Task 3.1:** Buat `Services/TransactionObserver.swift` yang menangani `createTransaction`, `updateTransaction`, dan `deleteTransaction` secara atomik (otomatis memperbarui `account.balance`).

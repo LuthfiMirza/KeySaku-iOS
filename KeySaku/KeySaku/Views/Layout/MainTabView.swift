@@ -97,6 +97,13 @@ struct DashboardPlaceholderView: View {
                         Text("Akun Saya")
                             .font(.headline)
                         Spacer()
+                        NavigationLink {
+                            ManageAccountsView()
+                        } label: {
+                            Text("Kelola Semua")
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(Color(hex: "#10B981"))
+                        }
                     }
                     
                     ForEach(accounts) { account in
