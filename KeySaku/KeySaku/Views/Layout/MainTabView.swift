@@ -27,9 +27,7 @@ public struct MainTabView: View {
             .tag(1)
             
             // Tab 3: Anggaran
-            NavigationStack {
-                BudgetPlaceholderView()
-            }
+            ManageBudgetsView()
             .tabItem {
                 Label("Anggaran", systemImage: "chart.pie.fill")
             }
