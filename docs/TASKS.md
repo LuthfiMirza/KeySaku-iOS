@@ -40,5 +40,5 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 ## Milestone 7 (M7) — Modern Family UI/UX Redesign (Sesuai Referensi)
 - [x] **Task 7.1:** Buat spesifikasi desain UI/UX di `docs/DESIGN.md` dan komponen dasar: `CurvedHeaderShape.swift`, `GridAccountCard.swift`, `SmartPromoCarousel.swift`, dan `CategoryStripView.swift`.
 - [x] **Task 7.2:** Perbarui `DashboardView.swift` dengan Curved Hero Header organik, Floating Balance Card, Quick Actions, Smart Carousel, Category Strip, dan 2-Column Grid Akun.
-- [ ] **Task 7.3:** Polish & integrasikan interaksi navigasi, quick actions, dan review tampilan di iOS Simulator.
+- [x] **Task 7.3:** Polish & integrasikan interaksi navigasi, quick actions, dan review tampilan di iOS Simulator.
 

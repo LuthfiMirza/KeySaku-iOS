@@ -108,7 +108,7 @@ public struct DashboardView: View {
                         // MARK: - 6. Transaksi Terbaru
                         recentTransactionsSection
                             .padding(.horizontal)
-                            .padding(.bottom, 36)
+                            .padding(.bottom, 90)
                     }
                     .padding(.top, 14)
                 }

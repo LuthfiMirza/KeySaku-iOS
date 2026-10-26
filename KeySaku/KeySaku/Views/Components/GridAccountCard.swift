@@ -77,8 +77,9 @@ public struct GridAccountCard: View {
             }
         }
         .padding(14)
-        .frame(height: 145)
-        .background(Color(.secondarySystemBackground))
+        .frame(height: 150)
+        .background(Color(.secondarySystemGroupedBackground))
         .clipShape(RoundedRectangle(cornerRadius: 18))
+        .shadow(color: Color.black.opacity(0.04), radius: 6, y: 3)
     }
 }
