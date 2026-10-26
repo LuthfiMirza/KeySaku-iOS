@@ -1,10 +1,3 @@
-//
-//  KeySakuApp.swift
-//  KeySaku
-//
-//  Created by mac on 26/10/26.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -12,7 +5,11 @@ import SwiftData
 struct KeySakuApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Account.self,
+            Category.self,
+            Transaction.self,
+            Budget.self,
+            SavingsGoal.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +22,7 @@ struct KeySakuApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
         .modelContainer(sharedModelContainer)
     }
