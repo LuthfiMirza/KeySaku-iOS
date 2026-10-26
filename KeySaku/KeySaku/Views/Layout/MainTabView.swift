@@ -20,9 +20,7 @@ public struct MainTabView: View {
             .tag(0)
             
             // Tab 2: Transaksi
-            NavigationStack {
-                TransactionPlaceholderView()
-            }
+            TransactionListView()
             .tabItem {
                 Label("Transaksi", systemImage: "list.bullet.rectangle.portrait.fill")
             }
