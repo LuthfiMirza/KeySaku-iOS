@@ -31,7 +31,7 @@ Gunakan daftar tugas berurutan ini untuk mengeksekusi pembuatan kode **KeySaku i
 - [x] **Task 5.3:** Buat `Views/Reports/ReportsChartView.swift` menggunakan framework `Charts` bawaan Apple:
   - Grafik Batang (`BarMark`) pemasukan vs pengeluaran 6 bulan terakhir.
   - Grafik Donat (`SectorMark`) pengeluaran per kategori bulan ini.
-- [ ] **Task 5.4:** Lengkapi `Views/Dashboard/DashboardView.swift` dengan kartu ringkasan saldo, ringkasan anggaran keseluruhan, tombol cepat Input Suara, dan kartu Insight otomatis.
+- [x] **Task 5.4:** Lengkapi `Views/Dashboard/DashboardView.swift` dengan kartu ringkasan saldo, ringkasan anggaran keseluruhan, tombol cepat Input Suara, dan kartu Insight otomatis.
 
 ## Milestone 6 (M6) — Cloud Sync Laravel & Polish
 - [ ] **Task 6.1:** Buat `Services/SyncService.swift` untuk sinkronisasi dua arah antara `SwiftData` lokal di iPhone dan endpoint REST API `/api/v1/sync` di server Laravel Hostinger.

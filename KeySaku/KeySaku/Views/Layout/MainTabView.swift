@@ -11,9 +11,7 @@ public struct MainTabView: View {
     public var body: some View {
         TabView(selection: $selectedTab) {
             // Tab 1: Dashboard
-            NavigationStack {
-                DashboardPlaceholderView(selectedTab: $selectedTab)
-            }
+            DashboardView(selectedTab: $selectedTab)
             .tabItem {
                 Label("Dashboard", systemImage: "house.fill")
             }
@@ -51,129 +49,6 @@ public struct MainTabView: View {
         .onAppear {
             DatabaseSeeder.seedIfNeeded(context: modelContext)
         }
-    }
-}
-
-// MARK: - Placeholder Views (akan digantikan di M2, M3, M4, M5)
-
-struct DashboardPlaceholderView: View {
-    @Binding var selectedTab: Int
-    @Query private var accounts: [Account]
-    @Query private var transactions: [Transaction]
-    
-    var totalBalance: Double {
-        accounts.reduce(0) { $0 + $1.balance }
-    }
-    
-    var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                // Card Total Saldo
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Total Saldo Seluruh Akun")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    
-                    Text(CurrencyFormatter.rupiah(totalBalance))
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
-                        .foregroundStyle(.primary)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
-                .background(Color(.secondarySystemBackground))
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-                
-                // Ringkasan Akun
-                VStack(alignment: .leading, spacing: 12) {
-                    HStack {
-                        Text("Akun Saya")
-                            .font(.headline)
-                        Spacer()
-                        NavigationLink {
-                            ManageAccountsView()
-                        } label: {
-                            Text("Kelola Semua")
-                                .font(.subheadline.weight(.semibold))
-                                .foregroundStyle(Color(hex: "#10B981"))
-                        }
-                    }
-                    
-                    ForEach(accounts) { account in
-                        HStack {
-                            Image(systemName: account.icon)
-                                .font(.title3)
-                                .frame(width: 40, height: 40)
-                                .background(Color(hex: account.colorHex).opacity(0.15))
-                                .foregroundStyle(Color(hex: account.colorHex))
-                                .clipShape(Circle())
-                            
-                            VStack(alignment: .leading) {
-                                Text(account.name)
-                                    .font(.body.weight(.medium))
-                                Text(account.type)
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                            
-                            Spacer()
-                            
-                            Text(CurrencyFormatter.rupiah(account.balance))
-                                .font(.body.weight(.semibold))
-                        }
-                        .padding(.vertical, 4)
-                    }
-                }
-                .padding()
-                .background(Color(.secondarySystemBackground))
-                .clipShape(RoundedRectangle(cornerRadius: 16))
-            }
-            .padding()
-        }
-        .navigationTitle("KeySaku")
-    }
-}
-
-struct TransactionPlaceholderView: View {
-    var body: some View {
-        ContentUnavailableView(
-            "Riwayat Transaksi",
-            systemImage: "list.bullet.rectangle.portrait",
-            description: Text("Daftar transaksi akan hadir lengkap di Milestone 3.")
-        )
-        .navigationTitle("Transaksi")
-    }
-}
-
-struct BudgetPlaceholderView: View {
-    var body: some View {
-        ContentUnavailableView(
-            "Anggaran Bulanan",
-            systemImage: "chart.pie",
-            description: Text("Fitur alokasi anggaran bulanan akan hadir di Milestone 4.")
-        )
-        .navigationTitle("Anggaran")
-    }
-}
-
-struct GoalPlaceholderView: View {
-    var body: some View {
-        ContentUnavailableView(
-            "Target Tabungan",
-            systemImage: "target",
-            description: Text("Pelacak capaian target tabungan akan hadir di Milestone 4.")
-        )
-        .navigationTitle("Tabungan")
-    }
-}
-
-struct ReportPlaceholderView: View {
-    var body: some View {
-        ContentUnavailableView(
-            "Laporan Keuangan",
-            systemImage: "chart.bar.xaxis",
-            description: Text("Grafik Swift Charts dan laporan bulanan akan hadir di Milestone 5.")
-        )
-        .navigationTitle("Laporan")
     }
 }
 
